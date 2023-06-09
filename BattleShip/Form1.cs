@@ -643,8 +643,8 @@ namespace BattleShip
 
             try
             {
-                player1 = new PlayerFile("John", @"..\..\..\files\playerfile-john.txt");
-                player2 = new PlayerFile("Mary", @"..\..\..\files\playerfile-mary.txt");
+                player1 = new PlayerFile("John", @"files\playerfile-john.txt");
+                player2 = new PlayerFile("Mary", @"files\playerfile-mary.txt");
             }
             catch (BattleshipIOException io)
             {
@@ -692,14 +692,14 @@ namespace BattleShip
             {
                 //player1 = PlayerFactory.CreatePlayer("John", @"..\..\..\files\playerfile-john.txt");
                 //player2 = PlayerFactory.CreatePlayer("Mary", @"..\..\..\files\playerfile-mary.txt");
-                player1 = new PlayerFile("John", @"..\..\..\files\playerfile-john.txt");
-                player2 = new PlayerFile("Mary", @"..\..\..\files\playerfile-mary.txt");
+                player1 = new PlayerFile("John", @"files\playerfile-john.txt");
+                player2 = new PlayerFile("Mary", @"files\playerfile-mary.txt");
 
             }
             catch (BattleshipIOException e1)
             {
                 console.WriteLine(e1.GetMessage());
-                console.WriteLine("Ha cascado en la creación de player1 y/o player2");
+                console.WriteLine("Ha cascado en la creaciï¿½n de player1 y/o player2");
             }
 
             try
